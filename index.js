@@ -20,6 +20,8 @@ app.use(cors());
 
 app.use("/api/auth", userRoutes);
 
+app.get("/", (req, res) => res.send("DESDE INICIO"));
+
 //define port
 const PORT = process.env.PORT || 4000;
 
